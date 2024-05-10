@@ -1,4 +1,4 @@
-def remove_elemets(lista):
+def remove_elemts(lista):
     if len(lista) >= 6:
           del lista[5]
           del lista[4]
@@ -13,7 +13,7 @@ def remove_elemets(lista):
        print (lista)
 
 lista1=['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-remove_elemets(lista1)
+remove_elemts(lista1)
 
 def add_elemets(lista):
     lista.insert(0,'Pink')
