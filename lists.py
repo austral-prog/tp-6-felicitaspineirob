@@ -1,4 +1,4 @@
-def remove_elemts(lista):
+def remove_elemets(lista):
     if len(lista) >= 6:
           del lista[5]
           del lista[4]
@@ -11,8 +11,9 @@ def remove_elemts(lista):
     else:
        del lista[0]
        print (lista)
+
 lista1=['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-remove_elemts(lista1)
+remove_elemets(lista1)
 
 def add_elemets(lista):
     lista.insert(0,'Pink')
@@ -37,8 +38,8 @@ def check_list(lista1, lista2):
 lista1= ['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White']
 lista2= ['Red', 'Green', 'Yellow', 'White', 'Black', 'Pink']
 result= check_list(lista1, lista2)
-print(f"Expected Output: {result}")
+print(result)
 lista3= ['Black', 'Pink', 'Green', 'White']
 lista4= ['Red', 'Green', 'Yellow', 'Black', 'Pink']
 result2= check_list(lista3, lista4)
-print(f"Expected Output: {result2}") 
+print(result2)
