@@ -11,7 +11,6 @@ def remove_elemts(lista):
     else:
        del lista[0]
        print (lista)
-
 lista1=['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 remove_elemts(lista1)
 
