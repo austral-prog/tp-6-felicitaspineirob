@@ -1,19 +1,21 @@
-def remove_elemets(lista):
-    if len(lista) >= 6:
-          del lista[5]
-          del lista[4]
-          del lista [0]
-          print (lista)
-    elif len(lista) >=5:
-        del lista[4]
-        del lista[0]
-        print (lista)
-    else:
-       del lista[0]
-       print (lista)
+def remove_elemets(list):
+    if list == []:
+        return list
+    del list_to_remove_elements[0]
+    
+if len(list_to_remove_elements) > 3:
+    del list_to_remove_elements[3]
+else:
+    return list_to_remove_elements
 
-lista1=['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
-remove_elemets(lista1)
+if len(list_to_remove_elements) > 3:
+    del list_to_remove_elements[3]
+        return list_to_remove_elements
+else:
+    return list_to_remove_elements
+
+list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+print(remove_elements(list))
 
 def add_elemets(lista):
     lista.insert(0,'Pink')
