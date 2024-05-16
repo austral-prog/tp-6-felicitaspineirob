@@ -17,30 +17,35 @@ else:
 list = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 print(remove_elements(list))
 
-def add_elemets(lista):
-    lista.insert(0,'Pink')
-    lista.append('Yellow')
-    print(lista)
-lista2= ['Red', 'Green', 'White', 'Black']
-add_elemets(lista2)
+def add_elements(list_to_add_elements):
+    return ["Pink"] + list_to_add_elements + ["Yellow"]
 
-def is_empty(lista):
-    if len(lista) == 0:
-        return "Esta vacia"
+list_to_add_elements = ['Red', 'Green', 'White', 'Black']
+print(add_elements(list_to_add_elements))
+
+def is_empty(list_to_check):
+    if list_to_check == []:
+        return True
     else:
-        return "No esta vacia"
-lista3= [ ]
-print(is_empty(lista3))
-
-def check_list(lista1, lista2):
-    if len(lista1)<3 or len(lista2)<3:
         return False
+list_to_check = ['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White']
+print(is_empty(list_to_check))
+
+def check_lists(list_to_compare1, list_to_compare2):
+    if len(list_to_compare1) > 2 and len(list_to_compare2) > 2:
+        if (list_to_compare1[2] == list_to_compare2[2]):
+            return True
     else:
-        return lista1[2] ==lista2[2]
-lista1= ['Black', 'Pink', 'Yellow', 'Red', 'Green', 'White']
-lista2= ['Red', 'Green', 'Yellow', 'White', 'Black', 'Pink']
-result= check_list(lista1, lista2)
-print(result)
+        return False
+
+def list_of_lists(list_of_lists_to_modify):
+    lista1 = list_of_lists_to_modify[0][0:2]
+    lista2 = list_of_lists_to_modify[1][1:4]
+    lista3 = list_of_lists_to_modify[2][-2:]
+
+    return [lista1, lista2, lista3]
+list_of_lists_to_modify = [[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]]
+print(list_of_lists(list_of_lists_to_modify))
 lista3= ['Black', 'Pink', 'Green', 'White']
 lista4= ['Red', 'Green', 'Yellow', 'Black', 'Pink']
 result2= check_list(lista3, lista4)
